@@ -16,3 +16,15 @@ const images = [
     },
 ];
 
+const galleryEl = document.querySelector('#gallery');
+
+const makeGalleryMarkup = images => 
+    images.map(({ url, alt }) => 
+        `
+        <li class="gallery-item">
+            <img src="${url}" alt="${alt}" width="480">
+        </li>
+        `
+    ).join('');
+
+galleryEl.insertAdjacentHTML('beforeend', makeGalleryMarkup(images));
