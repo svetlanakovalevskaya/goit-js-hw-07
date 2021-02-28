@@ -1,3 +1,44 @@
+body {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+ul {
+  list-style: none;
+}
+
 .gallery-item {
     display: inline-flex;
+    margin: 0;
+    transition-duration: 250ms;
+    transition-timing-function: linear;
+}
+
+.gallery-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.gallery-item:focus,
+.gallery-item:hover {
+    transform: scale(1.1);
+
+}
+
+#counter {
+  display: inline-block;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+}
+
+#counter > button {
+  width: 100px;
+  height: 50px;
+  font-size: 40px;
+}
+
+#value {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 40px;
 }
