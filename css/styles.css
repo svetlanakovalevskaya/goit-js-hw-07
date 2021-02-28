@@ -74,6 +74,34 @@ ul {
 }
 
 #text {
+  display: block;
   font-size: 24px;
   color: darkred;
+}
+
+#controls {
+  padding-top: 40px;
+  display: block;
+  height: 30px;
+}
+
+#controls > button{
+  display: inline-block;
+  width: 100px;
+  height: inherit;
+}
+
+#controls > input{
+  width: 100px;
+  height: 25px;
+}
+
+#boxes {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.box:not(:last-child) {
+  margin-right: 20px;
 }
