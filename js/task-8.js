@@ -40,14 +40,9 @@ function onChangeRangeInput () {
 
 function onClickRenderButton () {
     createBoxes(boxesAmount);
+    controlsEl.firstElementChild.value = 0;
 }
 
 function onClickDestroyButton () {
-    for (let i = 0; i < boxesAmount; i += 1) {
-        const boxEl = document.querySelector('.box');
-        boxesEl.removeChild(boxEl);
-    }
-
-    boxesAmount = 0;
-    controlsEl.firstElementChild.value = boxesAmount;
+    boxesEl.innerHTML = '';
 }
